@@ -1,7 +1,5 @@
 const createPerson = (name, age) => {
-  return {name,
-    age,
-  }
+  return { name, age };
 };
 
 const getName = object => {
@@ -20,28 +18,28 @@ const isOver65 = person => {
   if (person.age > 65 ) {
     return true;
   } else {
-     return false; 
-  }
+     return false;
+  } 
+  // try shorten this bit without if statement
 };
 
 const getAges = people => {
-  return people.map (people => people.age);
+  return people.map(people => people.age);
 };
 
 const findByName = (name, people) => {
-  return people.find (x => x.name === name );
+  return people.find(x => x.name === name );
 };
 
 const findHondas = cars => {
-  return cars.filter (company => company.manufacturer === 'Honda');
+  return cars.filter(company => company.manufacturer === 'Honda');
 };
 
 const averageAge = people => {
-  return people.reduce ((acc, curr) => acc + curr.age, 0) / people.length;
+  return people.reduce((acc, curr) => acc + curr.age, 0) / people.length;
 };
 
 const createTalkingPerson = (name, age) => {
-  //return `Hello, my name is ${createTalkingPerson.name} and I am ${createTalkingPerson.age} years old.`
   return {
     name: name,
     age: age,
